@@ -10,7 +10,7 @@ import {
 import { Input, Badge } from 'antd'
 import { Link } from 'react-router-dom'
 
-const UstHeader = () => {
+const Header = () => {
   return (
     <div className='mb-6 border-b'>
       <header className='flex items-center justify-between gap-10 px-6 py-4 header'>
@@ -42,9 +42,9 @@ const UstHeader = () => {
               <span className='text-xs md:text-[10px]'>Sepet</span>
             </Link>
           </Badge>
-          <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
+          <Link to={'/invoices'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
             <CopyOutlined className='text-lg md:text-xl' />
-            <span className='text-xs md:text-[10px]'>Faturalar</span>
+            <span className='text-xs md:text-[10px]'>Fişler</span>
           </Link>
           <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
             <UserOutlined className='text-lg md:text-xl' />
@@ -73,4 +73,4 @@ const UstHeader = () => {
   )
 }
 
-export default UstHeader
+export default Header

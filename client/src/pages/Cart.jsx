@@ -1,9 +1,9 @@
 import { Button, Card, Table } from 'antd'
-import UstHeader from '../components/header/UstHeader'
+import Header from '../components/header/Header'
 import { useState } from 'react'
-import CreateBill from '../components/cart/CreateBill'
+import CreateInvoice from '../components/cart/CreateInvoice'
 
-const CartPage = () => {
+const Cart = () => {
   const dataSource = [
     {
       key: '1',
@@ -36,11 +36,11 @@ const CartPage = () => {
       key: 'address',
     },
   ]
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <>
-      <UstHeader />
+      <Header />
       <div className='px-6'>
         <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
         <div className='flex justify-end mt-4 cart-total'>
@@ -69,10 +69,10 @@ const CartPage = () => {
             </Button>
           </Card>
         </div>
-        <CreateBill isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <CreateInvoice isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </div>
     </>
   )
 }
 
-export default CartPage
+export default Cart

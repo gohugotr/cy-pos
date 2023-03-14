@@ -1,12 +1,12 @@
 import CartTotal from '../components/cart/CartTotal'
 import Categories from '../components/categories/Categories'
-import UstHeader from '../components/header/UstHeader'
+import Header from '../components/header/Header'
 import Products from '../components/products/Products'
 
-const HomePage = () => {
+const Home = () => {
   return (
     <>
-      <UstHeader />
+      <Header />
       <div className='flex flex-col justify-between gap-10 px-6 pb-20 home md:flex-row md:pb-0'>
         <div className='categories overflow-auto max-h-[calc(100vh_-_112px)]'>
           <Categories />
@@ -22,4 +22,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default Home

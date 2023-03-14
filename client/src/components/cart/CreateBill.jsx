@@ -1,7 +1,7 @@
 import { Modal } from 'antd'
 import React from 'react'
 
-const CreateBill = ({isModalOpen, setIsModalOpen}) => {
+const CreateInvoice = ({ isModalOpen, setIsModalOpen }) => {
   return (
     <>
       <Modal
@@ -18,4 +18,4 @@ const CreateBill = ({isModalOpen, setIsModalOpen}) => {
   )
 }
 
-export default CreateBill
+export default CreateInvoice
