@@ -42,6 +42,7 @@ const Cart = () => {
     <>
       <Header />
       <div className='px-6'>
+        <h1 className='mb-4 text-4xl font-bold text-center'>Sepet</h1>
         <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
         <div className='flex justify-end mt-4 cart-total'>
           <Card className='w-72'>

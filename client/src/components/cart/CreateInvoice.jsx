@@ -21,7 +21,7 @@ const CreateInvoice = ({ isModalOpen, setIsModalOpen }) => {
   return (
     <>
       <Modal
-        title='Fatura Oluştur'
+        title='Fiş Oluştur'
         footer={false}
         open={isModalOpen}
         onCancel={() => setIsModalOpen(false)}
