@@ -28,21 +28,27 @@ const Header = () => {
             prefix={<SearchOutlined />}
           />
         </div>
-        <div className='fixed bottom-0 left-0 z-50 flex items-center justify-between w-screen gap-6 px-4 py-1 text-center bg-white border-t border-1 md:w-auto menu-links md:static md:bg-transparent md:border-t-0 md:px-0'>
-          <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
+        <div className='fixed bottom-0 left-0 z-50 flex items-center justify-between w-screen gap-6 px-4 text-center bg-white border-t border-1 md:w-auto menu-links md:static md:bg-transparent md:border-t-0 md:px-0'>
+          <Link
+            to={'/'}
+            className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'
+          >
             <HomeOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Ana Sayfa</span>
           </Link>
-          <Badge count={5} offset={[0, 6]} className='hidden mx-2 md:flex'>
+          <Badge count={5} offset={[0, 8]} className='hidden mx-2 md:flex bottom-[1px]'>
             <Link
               to={'/cart'}
-              className='flex flex-col menu-link hover:text-[#40a9ff] transition-all '
+              className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'
             >
-              <ShoppingCartOutlined className='text-2xl' />
-              <span className='text-xs md:text-[10px]'>Sepet</span>
+              <ShoppingCartOutlined className='text-lg md:text-xl' />
+              <span className='text-xs md:text-[10px] '>Sepet</span>
             </Link>
           </Badge>
-          <Link to={'/invoices'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
+          <Link
+            to={'/invoices'}
+            className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'
+          >
             <CopyOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Fişler</span>
           </Link>
