@@ -1,3 +1,3 @@
 # Cy-Pos Backend
 
-Backend Tarafı
+Backend Tarafı yazılacak
