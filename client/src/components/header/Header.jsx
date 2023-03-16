@@ -16,7 +16,7 @@ const Header = () => {
       <header className='flex items-center justify-between gap-10 px-6 py-4 header'>
         <div className='logo'>
           <Link to={'/'}>
-            <h2 className='text-2xl font-bold text-red-600 md:text-4xl'>LOGO</h2>
+            <h2 className='text-2xl font-bold text-slate-700 md:text-4xl'>LOGO</h2>
             {/* <div className='w-16 h-16 my-auto bg-center bg-cover bg-logo'></div> */}
           </Link>
         </div>
@@ -29,10 +29,7 @@ const Header = () => {
           />
         </div>
         <div className='fixed bottom-0 left-0 z-50 flex items-center justify-between w-screen gap-6 px-4 text-center bg-white border-t border-1 md:w-auto menu-links md:static md:bg-transparent md:border-t-0 md:px-0'>
-          <Link
-            to={'/'}
-            className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'
-          >
+          <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
             <HomeOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Ana Sayfa</span>
           </Link>
@@ -52,7 +49,7 @@ const Header = () => {
             <CopyOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Fişler</span>
           </Link>
-          <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
+          <Link to={'/customer'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
             <UserOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Müşteriler</span>
           </Link>

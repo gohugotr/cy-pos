@@ -6,6 +6,7 @@ import App from './App'
 import ErrorPage from './pages/error-page'
 import Cart from './pages/Cart'
 import Invoices from './pages/Invoices'
+import Customer from './pages/Customer'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: '/invoices',
     element: <Invoices />,
+  },
+  {
+    path: '/customer',
+    element: <Customer />,
   },
 ])
 
