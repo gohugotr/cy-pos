@@ -9,6 +9,7 @@ import Invoices from './pages/Invoices'
 import Customer from './pages/Customer'
 import Statistic from './pages/Statistic'
 import Register from './pages/auth/Register'
+import Login from './pages/auth/Login'
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: '/login',
+    element: <Login />,
     errorElement: <ErrorPage />,
   },
 ])
