@@ -7,7 +7,7 @@ module.exports = {
         card: 'repeat(auto-fill, minmax(150px, 1fr))',
       },
       backgroundImage: {
-        logo: "url('../public/img/logo.png')",
+        logo: "url('../public/images/logo.png')",
       },
     },
   },

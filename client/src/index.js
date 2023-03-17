@@ -7,6 +7,7 @@ import ErrorPage from './pages/error-page'
 import Cart from './pages/Cart'
 import Invoices from './pages/Invoices'
 import Customer from './pages/Customer'
+import Statistic from './pages/Statistic'
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: '/customer',
     element: <Customer />,
+  },
+  {
+    path: '/statistic',
+    element: <Statistic />,
   },
 ])
 

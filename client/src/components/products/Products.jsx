@@ -31,7 +31,7 @@ const Products = () => {
       </div>
       <div className='transition-all border cursor-pointer select-none product-item hover:shadow-lg'>
         <div className='product-img'>
-          <img src='img/salgam.jpeg' alt='' className='object-cover w-full border-b h-28' />
+          <img src='images/salgam.jpeg' alt='' className='object-cover w-full border-b h-28' />
         </div>
         <div className='flex flex-col p-1 product-info'>
           <span>Şalgam</span>

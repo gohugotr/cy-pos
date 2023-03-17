@@ -53,7 +53,7 @@ const Header = () => {
             <UserOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>Müşteriler</span>
           </Link>
-          <Link to={'/'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
+          <Link to={'/statistic'} className='flex flex-col menu-link hover:text-[#40a9ff] transition-all'>
             <BarChartOutlined className='text-lg md:text-xl' />
             <span className='text-xs md:text-[10px]'>İstatistikler</span>
           </Link>

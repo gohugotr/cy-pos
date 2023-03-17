@@ -1,7 +1,5 @@
-import { Button, Card, Table } from 'antd'
+import { Table } from 'antd'
 import Header from '../components/header/Header'
-import { useState } from 'react'
-import PrintInvoice from '../components/invoices/PrintInvoice'
 
 const Customer = () => {
   const dataSource = [
@@ -37,15 +35,12 @@ const Customer = () => {
     },
   ]
 
-
   return (
     <>
       <Header />
       <div className='px-6'>
         <h1 className='mb-4 text-4xl font-bold text-center'>Müşteriler</h1>
         <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
-    
-  
       </div>
     </>
   )
