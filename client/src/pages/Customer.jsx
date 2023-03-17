@@ -42,6 +42,8 @@ const Customer = () => {
         <h1 className='mb-4 text-4xl font-bold text-center'>Müşteriler</h1>
         <Table dataSource={dataSource} columns={columns} pagination={false} bordered />
       </div>
+
+      
     </>
   )
 }

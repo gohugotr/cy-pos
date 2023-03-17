@@ -9,28 +9,33 @@ import Invoices from './pages/Invoices'
 import Customer from './pages/Customer'
 import Statistic from './pages/Statistic'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/cart',
     element: <Cart />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/invoices',
     element: <Invoices />,
-  },
+    errorElement: <ErrorPage />
+  },  
   {
     path: '/customer',
     element: <Customer />,
+    errorElement: <ErrorPage />
   },
-  {
+    {
     path: '/statistic',
     element: <Statistic />,
-  },
+    errorElement: <ErrorPage />
+  }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
