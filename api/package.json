@@ -1,0 +1,11 @@
+{
+  "name": "cy-server",
+  "version": "1.0.0",
+  "description": "Cy-POS Server",
+  "main": "server.js",
+  "scripts": {
+    "server": "node --watch server.js"
+  },
+  "author": "Cy-POS Cengiz YILMAZ",
+  "license": "ISC"
+}
