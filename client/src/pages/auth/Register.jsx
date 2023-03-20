@@ -1,4 +1,4 @@
-import { Button, Carousel, Checkbox, Form, Input } from 'antd'
+import { Button, Carousel, Form, Input } from 'antd'
 import { Link } from 'react-router-dom'
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
 import AuthCarousel from './AuthCarousel'
@@ -97,20 +97,12 @@ const Register = () => {
                 </Form.Item>
 
                 <Form.Item>
-                  <Form.Item name='remember' valuePropName='checked' noStyle>
-                    <Checkbox>Beni hatırla</Checkbox>
-                  </Form.Item>
-                  <Link className='text-blue-600 login-form-forgot' to='/'>
-                    Şifremi Unuttum
-                  </Link>
-                </Form.Item>
-                <Form.Item>
                   <Button type='primary' htmlType='submit' className='w-full'>
                     Oturum Aç
                   </Button>
                   veya{' '}
-                  <Link to='/register' className='text-blue-600'>
-                    Kayıt Ol!
+                  <Link to='/login' className='leading-9 text-blue-600'>
+                    Şimdi Giriş Yap!
                   </Link>
                 </Form.Item>
               </Form>
