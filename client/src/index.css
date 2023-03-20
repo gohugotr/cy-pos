@@ -13,6 +13,16 @@ body {
   /* Tailwinde ile, renk çakışması oldu */
   background-color: #1677ff;
 }
+#registerForm .login-form {
+  /* max-width: 400px; */
+}
+#registerForm .login-form-forgot {
+  float: right;
+}
+#registerForm .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+
 @media (min-width: 768px) {
   body {
     overflow: hidden;
