@@ -8,13 +8,13 @@ const Home = () => {
     <>
       <Header />
       <div className='flex flex-col justify-between gap-10 px-6 pb-20 home md:flex-row md:pb-0'>
-        <div className='categories overflow-auto max-h-[calc(100vh_-_112px)]'>
+        <div className='categories overflow-auto max-h-[calc(100vh_-_112px)] md:pb-10'>
           <Categories />
         </div>
         <div className='products flex-[8] overflow-y-auto max-h-[calc(100vh_-_112px)] '>
           <Products />
         </div>
-        <div className='border cart-wrapper min-w-[300px] md:mt-[-24px] md:mr-[-24px] '>
+        <div className='border cart-wrapper min-w-[300px] md:mt-[-24px] md:mr-[-24px]'>
           <CartTotal />
         </div>
       </div>

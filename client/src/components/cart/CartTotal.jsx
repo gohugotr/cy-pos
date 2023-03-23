@@ -3,7 +3,7 @@ import { ClearOutlined, PlusOutlined, MinusOutlined } from '@ant-design/icons'
 
 const CartTotal = () => {
   return (
-    <div className='flex flex-col h-full cart max-h-[calc(100vh_-_90px)]'>
+    <div className='flex flex-col h-auto cart min-h-[calc(100vh_-_80px)]'>
       <h2 className='py-4 text-sm font-bold tracking-wide text-center text-white bg-blue-600 '>
         Sepetteki Ürünler
       </h2>
